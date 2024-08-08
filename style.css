@@ -1,0 +1,276 @@
+/* Imported Fonts */
+@font-face {
+    font-family: "Fira Code";
+    src: url("fonts/FiraCode-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Share Tech Mono";
+    src: url("fonts/ShareTechMono-Regular.ttf");
+}
+
+/* Main */
+
+html{
+  height: 100%;
+}
+
+::selection{
+  background-color: #ff7d52;
+}
+
+body{
+  position: relative;
+  min-height: 100%;
+  background-color: #0F1035;
+  color: #DCF2F1;
+  font-family: "Fira Code", monospace;
+}
+
+h1{
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* Nav-Bar */
+
+.navbar{
+  background-color: black !important;
+}
+
+.navbar-brand{
+  color: #7FC7D9 !important;
+}
+
+.navbar-brand i:hover{
+  color: white;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #7FC7D9;
+}
+
+.nav-link:active{
+  color: white;
+}
+
+/* Hero */
+
+#hero{
+  background-image: linear-gradient(rgb(15, 16, 53,.6), rgb(0, 0, 0, .4)), url("img/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding-top: 25vh;
+  width: 100%;
+  text-shadow: black 4px 1px 2px;
+}
+
+#hero img{
+  width: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: rgb(255, 255, 255, .5);
+}
+
+#hero h1{
+  padding: 10px 0;
+}
+
+#border{
+  width: 40%;
+  max-width: 250px;
+  margin: auto;
+  border-width: 5px;
+  color: #7FC7D9;
+  opacity: 1.0 !important;
+  padding: 10px 0;
+}
+
+/* Mission */
+
+#mission-section{
+  padding-top: 30px;
+}
+
+#mission-section h1{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#mission-section img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+/* Skills */
+
+#skills-section{
+  padding-top: 30px;
+  text-align: center;
+}
+
+#skills-section i{
+  font-size: 125px;
+}
+
+#html{
+  color: #ff7300;
+}
+
+#css{
+  color:#009dff;
+}
+
+#javascript{
+  color:#ffdd00;
+}
+
+#bootstrap{
+  color:#ad34fe;
+}
+
+#python {
+  color: #34df6d;
+}
+
+#art {
+  color: #ff4d67;
+}
+
+/* Projects */
+#project-section {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card{
+  background-color: #090a20;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #DCF2F1;
+  margin: 0 auto 30px auto;
+  border-width: 0 !important;
+}
+
+.card-text{
+  text-align: left !important;
+  color: white;
+}
+
+.card a{
+  background-color: #090a20;
+  color: #DCF2F1;
+  border-color: #DCF2F1;
+  border-width: 2px;
+}
+
+.card .coming-soon{
+  background-color: #090a20 !important;
+  color: #DCF2F1 !important;
+  border-color: #DCF2F1 !important;
+  border-width: 2px;
+}
+
+.card a:hover{
+  color: #090a20;
+  background-color: #DCF2F1;
+  border-color: #DCF2F1;
+}
+
+.card a:active{
+  color: #090a20 !important;
+  background-color: #ff7d52 !important;
+  border-color: #ff7d52 !important;
+}
+
+/* Contact */
+
+#contact-section{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#contact-section i{
+  font-size: 50px;
+}
+
+#contact-section a{
+  color: #7FC7D9;
+}
+
+#contact-section a:hover{
+  color: white;
+}
+
+/* Footer / Copyright */
+
+#footer-section{
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+}
+
+.copyright{
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Nav-Bar links */
+#mission-target, #skills-target, #contact-target, #project-target{
+  position: relative;
+  top: -100px;
+}
+
+/* Media Queries */
+@media (orientation: portrait), (not (hover:hover)), ((max-width: 992px) and (orientation: landscape)) {
+  .navbar-brand i:hover{
+    color: #7FC7D9;
+  }
+
+  .navbar-brand i:active{
+    color: white;
+  }
+
+  .nav-link:hover{
+    color: white;
+  }
+
+  .nav-link:active{
+    color: #7FC7D9;
+  }
+  
+  .card a:hover{
+    background-color: #090a20;
+    color: #DCF2F1;
+    border-color: #DCF2F1;
+  }
+
+  .card a:active{
+    color: #090a20 !important;
+    background-color: #ff7d52 !important;
+    border-color: #ff7d52 !important;
+  }
+
+  #contact-section a:hover{
+    color: #7FC7D9;
+  }
+
+  #contact-section a:active{
+    color: white;
+  }
+}
