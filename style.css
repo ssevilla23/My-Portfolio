@@ -10,267 +10,359 @@
 }
 
 /* Main */
-
-html{
-  height: 100%;
+body{
+    font-family: "Fira Code";
+    background-color: #2E0249;
+    color: #F806CC;
 }
 
 ::selection{
-  background-color: #ff7d52;
+    background-color: rgb(194, 145, 11);
+    color: white;
 }
 
-body{
-  position: relative;
-  min-height: 100%;
-  background-color: #0F1035;
-  color: #DCF2F1;
-  font-family: "Fira Code", monospace;
+/* Animations */
+@keyframes fadeInUp{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
-h1{
-  font-family: "Share Tech Mono", monospace;
+.heroAnimation{
+    animation: 1.5s fadeInUp;
 }
 
-/* Nav-Bar */
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
 
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none !important;
+    }
+
+    .heroAnimation{
+        animation: none;
+    }
+}
+
+/* Navbar */
 .navbar{
-  background-color: black !important;
-}
-
-.navbar-brand{
-  color: #7FC7D9 !important;
-}
-
-.navbar-brand i:hover{
-  color: white;
+    background-color: #180127 !important;
 }
 
 .nav-link{
-  color: white;
+    margin: auto 10px;
+    color: white;
 }
 
 .nav-link:hover{
-  color: #7FC7D9;
+    color: #F806CC;
 }
 
-.nav-link:active{
-  color: white;
+/* Hero Section */
+#hero-section{
+    background-image: linear-gradient(rgb(15, 16, 53,.6), rgb(0, 0, 0, .4)), url("img/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 25vh;
+    width: 100%;
+    
 }
 
-/* Hero */
-
-#hero{
-  background-image: linear-gradient(rgb(15, 16, 53,.6), rgb(0, 0, 0, .4)), url("img/hero-image.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  color: white;
-  text-align: center;
-  padding-top: 25vh;
-  width: 100%;
-  text-shadow: black 4px 1px 2px;
+#hero-section h1, h2{
+    text-shadow: #000000 4px 1px 1px;
+    padding: 10px 0;
 }
 
-#hero img{
-  width: 150px;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 8px;
-  border-color: rgb(255, 255, 255, .5);
+#hero-section img{
+    width: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #F806CC;
 }
-
-#hero h1{
-  padding: 10px 0;
-}
-
+  
 #border{
-  width: 40%;
-  max-width: 250px;
-  margin: auto;
-  border-width: 5px;
-  color: #7FC7D9;
-  opacity: 1.0 !important;
-  padding: 10px 0;
+    width: 40%;
+    max-width: 250px;
+    margin: auto;
+    border-width: 5px;
+    color: #F806CC;
+    opacity: 1.0 !important;
+    padding: 10px 0;
 }
 
-/* Mission */
-
-#mission-section{
-  padding-top: 30px;
+#resume{
+    margin-top: 10px;
+    background-color: #2E0249;
+    color: #F806CC;
+    border: solid, #F806CC;
 }
 
-#mission-section h1{
-  text-align: center;
-  padding-bottom: 30px;
+#resume:hover{
+    background-color: #F806CC;
+    color: #2E0249;
+    border: solid, #F806CC;
 }
 
-#mission-section img{
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-  padding-bottom: 15px;
+#resume:active{
+    background-color: #2E0249;
+    color: #F806CC;
+    border: solid, #F806CC;
 }
 
-/* Skills */
+/* Project Section */
+#project-section{
+    margin: 50px 0;
+    margin-bottom: 300px;
+    text-align: center;
+}
 
+#project-section h1{
+    margin-bottom: 50px;
+}
+
+#project-section .card-title{
+    color: #F806CC;
+}
+
+.coming-soon{
+    background-color: #3b035e !important;
+    color: #F806CC !important;
+    border: solid, 2px, #F806CC !important;
+}
+
+#publicis-buttons a{
+    margin-top: 10px;
+}
+
+.project-card-div{
+    margin-bottom: 50px;
+}
+
+.project-card{
+    margin: 0 auto;
+    background-color: #3b035e;
+    color: white;
+    padding: 20px;
+    border: solid, #58068b;
+}
+
+.project-card .card-text{
+    text-align: left;
+}
+
+.project-card a{
+    background-color: #3b035e;
+    color: #F806CC;
+    border: solid, 2px, #F806CC;
+}
+
+.project-card a:hover{
+    color: #3b035e;
+    background-color: #F806CC;
+    border: solid, 2px, #F806CC;
+}
+
+.project-card a:active{
+    background-color: #F806CC !important;
+    color: #3b035e!important;
+    border: solid, 2px, #F806CC!important;
+}
+
+/* Skills Section */
 #skills-section{
-  padding-top: 30px;
-  text-align: center;
+    margin: 300px auto;
+    text-align: center;
 }
 
-#skills-section i{
-  font-size: 125px;
+#skills-section h1{
+    margin-bottom: 50px;
 }
 
-#html{
-  color: #ff7300;
+.skills-div{
+    margin-bottom: 50px;
 }
 
-#css{
-  color:#009dff;
+.skills-div p{
+    margin-top: 20px;
+    border: solid, #58068b;
+    background-color: #3b035e;
+    color: white;
 }
 
-#javascript{
-  color:#ffdd00;
+/* Certificates Section */
+#awards-section{
+    margin: 300px auto;
+    text-align: center;
 }
 
-#bootstrap{
-  color:#ad34fe;
+#awards-section h1{
+    margin-bottom: 50px;
 }
 
-#python {
-  color: #34df6d;
+.award-card{
+    margin: 50px auto;
+    border: solid, #58068b;
+    background-color: #3b035e;
 }
 
-#art {
-  color: #ff4d67;
+.award-card .card-body{
+    margin-top: 15px;
 }
 
-/* Projects */
-#project-section {
-  padding-top: 30px;
-  text-align: center;
+.award-card h4{
+    color: white;
 }
 
-.card{
-  background-color: #090a20;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  color: #DCF2F1;
-  margin: 0 auto 30px auto;
-  border-width: 0 !important;
+.award-card a{
+    margin-top: 10px;
+    background-color: #3b035e;
+    color: #F806CC;
+    border: solid, 2px, #F806CC;
 }
 
-.card-text{
-  text-align: left !important;
-  color: white;
+.award-card a:hover{
+    color: #3b035e;
+    background-color: #F806CC;
+    border: solid, 2px, #F806CC;
 }
 
-.card a{
-  background-color: #090a20;
-  color: #DCF2F1;
-  border-color: #DCF2F1;
-  border-width: 2px;
+.award-card a:active{
+    background-color: #F806CC !important;
+    color: #3b035e !important;
+    border: solid, 2px, #F806CC !important;
 }
 
-.card .coming-soon{
-  background-color: #090a20 !important;
-  color: #DCF2F1 !important;
-  border-color: #DCF2F1 !important;
-  border-width: 2px;
+/* About Section */
+#about-section{
+    margin: 300px auto;
+    text-align: center;
 }
 
-.card a:hover{
-  color: #090a20;
-  background-color: #DCF2F1;
-  border-color: #DCF2F1;
+#about-section h1{
+    margin-bottom: 50px;
 }
 
-.card a:active{
-  color: #090a20 !important;
-  background-color: #ff7d52 !important;
-  border-color: #ff7d52 !important;
+#about-section p{
+    text-align: left;
+    color: white;
 }
 
-/* Contact */
+#about-section img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
 
+/* Contact Section */
 #contact-section{
-  text-align: center;
-  padding-bottom: 30px;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#contact-section h1{
+    margin-bottom: 50px;
 }
 
 #contact-section i{
-  font-size: 50px;
+    font-size: 90px;
+    color: white;
 }
 
-#contact-section a{
-  color: #7FC7D9;
+#contact-section i:hover{
+    color: #F806CC;
 }
 
-#contact-section a:hover{
-  color: white;
+#contact-section i:active{
+    color: white !important;
 }
 
 /* Footer / Copyright */
-
 #footer-section{
-  background-color: black;
-  color: white;
-  padding: 5px 0;
+    background-color: #180127;
+    color: white;
+    padding: 5px 0;
 }
-
+  
 .copyright{
-  font-size: 16px;
-  text-align: center;
-  padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
 }
-
+  
 /* Nav-Bar links */
-#mission-target, #skills-target, #contact-target, #project-target{
-  position: relative;
-  top: -100px;
+#project-target{
+    position: relative;
+    top: -100px;
+}
+#skills-target, #awards-target, #about-target, #contact-target{
+    position: relative;
+    top: -200px;
 }
 
 /* Media Queries */
 @media (orientation: portrait), (not (hover:hover)), ((max-width: 992px) and (orientation: landscape)) {
-  .navbar-brand i:hover{
-    color: #7FC7D9;
-  }
-
-  .navbar-brand i:active{
-    color: white;
-  }
-
-  .nav-link:hover{
-    color: white;
-  }
-
-  .nav-link:active{
-    color: #7FC7D9;
-  }
+    #resume:hover{
+        background-color: #2E0249;
+        color: #F806CC;
+        border: solid, #F806CC;
+    }
+    
+    #resume:active{
+        background-color: #F806CC;
+        color: #2E0249;
+        border: solid, #F806CC;
+    }
+    
+    .nav-link:hover{
+      color: white;
+    }
   
-  .card a:hover{
-    background-color: #090a20;
-    color: #DCF2F1;
-    border-color: #DCF2F1;
+    .nav-link:active{
+      color: #F806CC;
+    }
+    
+    .card a:hover{
+      background-color: #3b035e;
+      color: #F806CC;
+      border-color: #F806CC;
+    }
+  
+    .card a:active{
+      color: #3b035e !important;
+      background-color: #F806CC !important;
+      border-color: #F806CC !important;
+    }
+  
+    #contact-section i:hover{
+      color: white !important;
+    }
+  
+    #contact-section i:active{
+      color: #F806CC !important;
+    }
   }
-
-  .card a:active{
-    color: #090a20 !important;
-    background-color: #ff7d52 !important;
-    border-color: #ff7d52 !important;
-  }
-
-  #contact-section a:hover{
-    color: #7FC7D9;
-  }
-
-  #contact-section a:active{
-    color: white;
-  }
-}

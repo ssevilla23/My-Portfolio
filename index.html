@@ -1,355 +1,385 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  
-  <meta name="title" property="og:title" content="Sevilla Smith-Portfolio">
-  <meta name="author" content="Sevilla Smith">
-  
-  <title>Sevilla Smith-Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="img/icon.png">
-  <!-- Color Scheme: https://colorhunt.co/palette/dcf2f17fc7d93654860f1035 -->
-  
-  <!-- Bootstrap CSS Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
-  <!-- Bootstrap Icons Link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-  <!-- Custom Styles -->
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevilla Smith-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.png">
+    <meta name="title" property="og:title" content="Sevilla Smith-Portfolio">
+    <meta name="author" content="Sevilla Smith">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"\
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"\
+    crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" \
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom Styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+
 </head>
+<body class="scroll-top" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
-<body class="scroll-top"
-  data-bs-spy="scroll"
-  data-bs-target=".navbar"
-  data-bs-offset="100">
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#hero">
-        <i class="bi bi-house"></i>
-      </a>
-
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#mission-target">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills-target">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project-target">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-target">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <img src="img/profile.jpg" alt="profile picture">
-    <h1>Sevilla Smith</h1>
-    <hr id="border">
-    <h4>Artist, Coder & Student</h4>
-  </section>
-
-  <main class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#hero-section">
+            <img src="img/icons/favicon.png" width="40px" alt="Home Icon">
+          </a>
     
-    <!-- Mission Section -->
-    <div id="mission-target"></div>
-    <section id="mission-section" class="row">
-      <h1 class="display-5">About Me</h1>
-      <div class="col-lg-6 col-md-12">
-        <img src="img/mission-img.png" alt="art and code">
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <p><strong>Hello World!</strong> My name is Sevilla Smith, and I’m currently studying Computer Science at the University of Arizona. Before my technical journey, I had a deep-rooted passion for art, design, and writing, which has always driven my value of creativity. After taking a summer course on Python, I discovered another type of creativity through code and problem-solving, and I’ve been hooked ever since! With a background in art and a rising skill set in coding, I’m driven to participate in projects that allow me to blend these two creative mediums together. Whether it's developing visually appealing websites, innovative software, user-friendly interfaces, or even video games, I’m excited to discover opportunities that celebrate being artistically inspired and technically advanced!</p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <div id="skills-target"></div>
-    <section id="skills-section" class="row">
-      <h1 class="display-5">Skills</h1>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="html" class="bi bi-filetype-html"></i>
-        <p>Structuring the web's content using modern semantic HTML.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="css" class="bi bi-filetype-css"></i>
-        <p>Presenting beautiful web designs and interactions using modern CSS.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="javascript" class="bi bi-filetype-js"></i>
-        <p>Making interactive experiences, games, web apps, and more using javascript.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="bootstrap" class="bi bi-bootstrap"></i>
-        <p>Rapidly developing responsive websites using the web's most popular framework: Bootstrap.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="python" class="bi bi-filetype-py"></i>
-        <p>Building data structures, problem solving strategies, and software development using Python.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <i id="art" class="bi bi-file-earmark-image"></i>
-        <p>Crafting compelling design layouts and pieces of digital art using graphic design tools.</p>
-      </div>
-    </section>
-
-    <!-- Project Section -->
-    <div id="project-target"></div>
-    <section id="project-section" class="row">
-      <h1 class="display-5">Projects</h1>
-
-      <!-- AirBnb -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/airbnb.png" class="card-img-top" alt="Airbnb Project">
-          <div class="card-body">
-            <h5 class="card-title">AirBnb Project</h5>
-            <p class="card-text">Developed a simple filter and search functionality for an airbnb replica, allowing users to find rental properties by place type and price.<br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Airbnb-Project/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cowboy Carpet -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/carpet.png" class="card-img-top" alt="Cowboy-Carpet Project">
-          <div class="card-body">
-            <h5 class="card-title">Cowboy Carpet Page</h5>
-            <p class="card-text">Crafted a calculator for an imaginary carpet installation website that computes the carpet square footage needed based on the user’s room dimensions. <br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Cowboy-Carpet-Calculator/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dev-Threadz -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/dev-threadz.png" class="card-img-top" alt="Dev-Threadz Project">
-          <div class="card-body">
-            <h5 class="card-title">Dev Threadz Online Store</h5>
-            <p class="card-text">Assembled the search function, price converter, and total price calculator for a fictional online shirt store. <br /><br />Skills: JavaScript
-</p>
-            <a href="https://ssevilla23.github.io/Dev-Threadz-Project/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Eco-Friendly Steamers -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/eco-steamers.png" class="card-img-top" alt="Eco-friendly Steamers Project">
-          <div class="card-body">
-            <h5 class="card-title">Eco-Friendly Steamers Page</h5>
-            <p class="card-text">Customized a simple carpet cleaning website for a fictional company: Eco-Friendly Steamers. <br /><br />Skills: HTML, CSS, Bootstrap</p>
-            <a href="https://ssevilla23.github.io/Eco-Friendly-Steamers/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Steep-Hill Coffee -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/steep-hill.png" class="card-img-top" alt="Steep-Hill Coffee Project">
-          <div class="card-body">
-            <h5 class="card-title">Steep-Hill Coffee Page</h5>
-            <p class="card-text">Collaborated in a team of five coders to create a simple coffee website only using Bootstrap’s CSS libraries. <br /><br />Skills: Bootstrap</p>
-            <a href="https://ssevilla23.github.io/Steep-Hill-Coffee/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skullcapz -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/skullcapz.png" class="card-img-top" alt="Skullcapz Project">
-          <div class="card-body">
-            <h5 class="card-title">Skullcapz Tour Page</h5>
-            <p class="card-text">Worked with four other developers to design a website to advertise a fictional rock band’s tour concerts. <br /><br />Skills: HTML, CSS, Bootstrap</p>
-            <a href="https://ssevilla23.github.io/Skullcapz-Tour/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Escape-Sequence -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/escape-sequence.png" class="card-img-top" alt="Escape-Sequence Project">
-          <div class="card-body">
-            <h5 class="card-title">Escape-Sequence Project</h5>
-            <p class="card-text">Programmed a simple interactive photo gallery for a fictional camp program: DebugDetox. <br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Escape-Sequence-Gallery/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mad-Libs -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/mad-libs.png" class="card-img-top" alt="Mad-libs Project">
-          <div class="card-body">
-            <h5 class="card-title">Mad Libs Project</h5>
-            <p class="card-text">Coded a basic Mad-Libs game that prompts users to enter eight different words to create a short story based on their input. <br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Mad-Libs/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Netflix -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/netflix.png" class="card-img-top" alt="Netflix Project">
-          <div class="card-body">
-            <h5 class="card-title">Netflix Project</h5>
-            <p class="card-text">Programmed a random show generator for a Netflix replica that gives the user a random show based on the genre they choose. <br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Netflix-Random-Show/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fran's Flowers -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/flowers.png" class="card-img-top" alt="Fran's Flowers Project">
-          <div class="card-body">
-            <h5 class="card-title">Fran's Flowers Page</h5>
-            <p class="card-text">Re-modeled a fictional floral shop website, revamping its presentation and graphical design to improve the user experience.<br /><br />Skills: CSS, Bootstrap</p>
-            <a href="https://ssevilla23.github.io/Frans-Flowers/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Seacoast Hotel -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/seacoast.png" class="card-img-top" alt="Seacoast-Hotel Project">
-          <div class="card-body">
-            <h5 class="card-title">Seacoast Hotel Page</h5>
-            <p class="card-text">Built a fictional beach hotel website, featuring sections for about us, room reservations, and contact information. <br /><br />Skills: HTML, CSS, Bootstrap</p>
-            <a href="https://ssevilla23.github.io/Seacoast-Hotel/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Snowboard & Ski Club -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/snow-club.png" class="card-img-top" alt="Snow-Club Project">
-          <div class="card-body">
-            <h5 class="card-title">Ski & Snowboard Club Page</h5>
-            <p class="card-text">Constructed the desktop version of a fictional club website as well as improve the user experience for motion sickness users and the nav-link hover effects. <br /><br />Skills: HTML, CSS</p>
-            <a href="https://ssevilla23.github.io/Redtail-Club/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Publicis-Sapient -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/publicis-sapient.png" class="card-img-top" alt="Publicis-Sapient Project">
-          <div class="card-body">
-            <h5 class="card-title">Publicis-Sapient Project</h5>
-            <p class="card-text">Conducted UX research, created a wireframe prototype, and built functions for a simulated project inspired by Marriott Homes & Villas to enhance competitiveness in the housing rental market. <br /><br />Skills: UX Research, Prototyping, JavaScript</p>
-            <a href="https://docs.google.com/presentation/d/1XeSSNs1fdrQPFQHklwsI5MuBZRkLf3RyFyMlqXlAgT8/edit?usp=sharing" class="btn btn-primary">Prototype</a>
-            <a href="https://ssevilla23.github.io/Publicis-Sapient-Project/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Encouraging Words -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/positive-words.png" class="card-img-top" alt="Encouraging-Words Project">
-          <div class="card-body">
-            <h5 class="card-title">Encouraging Words Project</h5>
-            <p class="card-text">Coded the functionality of a website that asks for user input—name, positive words, and a postscript—and uses text-to-speech to read the message back to the user. <br /><br />Skills: JavaScript</p>
-            <a href="https://ssevilla23.github.io/Positive-Words/" class="btn btn-primary">View</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Apple Picking Game -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/coming-soon.png" class="card-img-top" alt="Coming Soon">
-          <div class="card-body">
-            <h5 class="card-title">Apple Picking Game</h5>
-            <p class="card-text">Developed and designed a video game using Python, focusing on collecting apples to achieve the highest score. <br /><br />Skills: Python, Krita</p>
-            <a class="btn btn-primary disabled coming-soon" role="button" aria-disabled="true">Coming Soon</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Matching Game -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card" style="width: 18rem;">
-          <img src="img/thumbnails/coming-soon.png" class="card-img-top" alt="Coming Soon">
-          
-          <div class="card-body">
-            <h5 class="card-title">Matching Card Game</h5>
-            <p class="card-text">Work in Progress</p>
-            <a class="btn btn-primary disabled coming-soon" role="button" aria-disabled="true">Coming Soon</a>
-          </div>
-        </div>
-      </div>
-    </section>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-    <!-- Contact Section -->
-    <div id="contact-target"></div>
-    <section id="contact-section" class="row">
-      <h1 class="display-5">Contact Me</h1>
-      <div class="col-md-4 col-sm-12">
-        <a href="https://www.linkedin.com/in/sevillasmith/">
-          <i class="bi bi-linkedin"></i> 
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <a href="mailto: ssmith23@arizona.edu">
-          <i class="bi bi-envelope"></i>
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <a href="https://github.com/ssevilla23">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-    </section>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#project-target">💻 Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-target">⭐ Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#awards-target">🏆 Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-target">📖 About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-target">📧 Contact</a>
+              </li>
+            </ul>
+          </div>
     
-  </main>
+        </div>
+    </nav>
 
-  <!-- Footer section -->
-  <section id="footer-section">
-    <div class="copyright">
-      <p>&copy; 2024 Sevilla Smith</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="container-fluid" id="hero-section">
+        <div class="heroAnimation">
+            <img src="img/profile-image.png" alt="profile picture">
+            <h1 class="display-3">Sevilla Smith</h1>
+            <hr id="border">
+            <h2>Welcome to my Portfolio!</h2>
+            <a class="btn btn-primary btn-lg" href="https://drive.google.com/file/d/1fFPFSH3AzZE2Ij4FxvbYu7gMbiKAeLBh/view?usp=sharing" target="_blank" rel="noopener noreferrer" role="button" id="resume">My Resume</a>
+        </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <main class="container">
+        <!-- Project Section -->
+        <div id="project-target"></div>
+        <section id="project-section" class="row">
+            <h1 class="display-3 hidden">Projects</h1>
+
+            
+
+            <!-- Matching Game -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/matching-game.png" class="card-img-top" alt="Matching Game">
+                    <div class="card-body">
+                        <h5 class="card-title">🌌 Galaxy Matching Game</h5>
+                        <p class="card-text">A simple, interactive matching game featuring a 12-card setup with mechanics powered by JavaScript and visuals showcasing custom galactic artwork created by me. <br /><br />Skills: JavaScript, Krita</p>
+                        <a href="https://ssevilla23.github.io/Galaxy-Matching-Game/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicis-Sapient -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/publicis-sapient.png" class="card-img-top" alt="Publicis-Sapient Project">
+                    <div class="card-body">
+                        <h5 class="card-title">💼 Publicis-Sapient Project</h5>
+                        <p class="card-text">This simulated project features my UX Research, wireframe prototype, and the  implementation of the prototype’s functions into the Marriott Homes & Villas website to improve the user experience in finding vacation homes. <br /><br />Skills: UX Research, Prototyping, JavaScript</p>
+                        <div id="publicis-buttons">
+                            <a href="https://drive.google.com/file/d/1c2YIi2G46QRakdGIMZvxWzS9XbkY46LL/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">UX Paper</a>
+                            <a href="https://docs.google.com/presentation/d/1XeSSNs1fdrQPFQHklwsI5MuBZRkLf3RyFyMlqXlAgT8/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Prototype</a><br>
+                            <a href="https://ssevilla23.github.io/Publicis-Sapient-Project/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a><br>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sari-Sari Store Website -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/sari-sari-store.png" class="card-img-top" alt="Lisbo Sari-Sari Store">
+                    <div class="card-body">
+                        <h5 class="card-title">🛒 The Lisbo Sari-Sari Store</h5>
+                        <p class="card-text">Magandang araw! This is a static website I created using web development tools to highlight the products, appearance, and history of my family’s convenience store in the Philippines. <br /><br />Skills: HTML, CSS, Bootstrap, JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Lisbo-Sari-Sari-Store/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seacoast Hotel -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/seacoast.png" class="card-img-top" alt="Seacoast-Hotel Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🏖️ Seacoast Hotel</h5>
+                        <p class="card-text">Welcome to Seacoast Hotel, your next getaway adventure! This fictional hotel website serves as a personal assessment of my HTML and CSS skillset.<br /><br />Skills: HTML, CSS, Bootstrap</p>
+                        <a href="https://ssevilla23.github.io/Seacoast-Hotel/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Snowboard & Ski Club -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/snow-club.png" class="card-img-top" alt="Snow-Club Project">
+                    <div class="card-body">
+                        <h5 class="card-title">❄️ Redtail Ski & Snowboard Club</h5>
+                        <p class="card-text"> This is a short project I completed, where I was tasked with designing the desktop version of a fictional club homepage and enhancing the user experience for motion sickness users, as well as improving the nav-link hover effects on mobile.<br /><br />Skills: HTML, CSS</p>
+                        <a href="https://ssevilla23.github.io/Redtail-Club/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Encouraging Words -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/positive-words.png" class="card-img-top" alt="Encouraging-Words Project">
+                    <div class="card-body">
+                        <h5 class="card-title">💌 Encouraging Words</h5>
+                        <p class="card-text">Need a motivational boost? Visit the Encouraging Words website, where you can write your own positive message and have it read back to you through a text-to-speech voice. <br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Positive-Words/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AirBnb -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/airbnb.png" class="card-img-top" alt="Airbnb Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🏠 AirBnb Project</h5>
+                        <p class="card-text">Find your next rental property using this Airbnb replica, featuring a simple filter and search functionality that allows users to find places by location, type, and price. <br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Airbnb-Project/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cowboy Carpet -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/carpet.png" class="card-img-top" alt="Cowboy-Carpet Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🤠 Cowboy Carpet Calculator</h5>
+                        <p class="card-text">Thinking about installing carpet floors? Check out the Cowboy Carpet website, which helps you calculate how much carpet you need based on your room dimensions.<br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Cowboy-Carpet-Calculator/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dev-Threadz -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/dev-threadz.png" class="card-img-top" alt="Dev-Threadz Project">
+                    <div class="card-body">
+                        <h5 class="card-title">👕 Dev-Threadz Online Store</h5>
+                        <p class="card-text">Shop at the Dev-Threadz Online Store, a fictional shop that sells web-dev merch and includes a search function, price converter, and total price calculator to improve your shopping experience.<br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Dev-Threadz-Project/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Netflix -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/netflix.png" class="card-img-top" alt="Netflix Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🍿 Random Netflix Show Project</h5>
+                        <p class="card-text">Find your next binge-worthy show using this random show generator for a Netflix replica that provides a random show title from a curated selection based on the genre you choose.<br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Random-Netflix-Show/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mad-Libs -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/mad-libs.png" class="card-img-top" alt="Mad-libs Project">
+                    <div class="card-body">
+                        <h5 class="card-title">📝 Mad-Libs Project</h5>
+                        <p class="card-text">Try out this one-story Mad-Lib that prompts you to enter eight different words to complete the short story. <br /><br />Skills: JavaScript</p>
+                        <a href="https://ssevilla23.github.io/Mad-Libs/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple Picking Game -->
+            <div class="col-lg-4 col-md-6 col-sm-12 project-card-div">
+                <div class="card project-card h-100 hidden" style="width: 18rem;">
+                    <img src="img/thumbnails/apple-picking.png" class="card-img-top" alt="Apple-Picking Game">
+                    <div class="card-body">
+                        <h5 class="card-title">🍎 Apple Picking Game</h5>
+                        <p class="card-text">It’s apple-picking season! Try out my 2D game, completely built with Python and featuring hand-drawn visuals by yours truly, where your goal is to use your basket to collect as many falling apples as you can while avoiding the rotten ones.  <br /><br />Skills: Python, Krita</p>
+                        <a class="btn btn-primary disabled coming-soon" role="button" aria-disabled="true">Coming Soon</a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <div id="skills-target"></div>
+        <section id="skills-section" class="row">
+            <h1 class="display-3 hidden">Skills</h1>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/html-icon.png" width="150px" alt="HTML Icon">
+                <p class="h2">HTML</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/css-icon.png" width="150px" alt="CSS Icon">
+                <p class="h2">CSS</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/js-icon.png" width="150px" alt="JavaScript Icon">
+                <p class="h2">JavaScript</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/bootstrap-icon.png" width="150px" alt="Bootstrap Icon">
+                <p class="h2">Bootstrap</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/python-file.png" width="150px" alt="Python Icon">
+                <p class="h2">Python</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 skills-div hidden">
+                <img src="img/icons/krita-icon.png" width="150px" alt="Krita Icon">
+                <p class="h2">Krita</p>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <div id="awards-target"></div>
+        <section id="awards-section" class="row">
+            <h1 class="display-3 hidden">Certifications</h1>
+            <div class="card award-card mb-3 hidden" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/thumbnails/html-css-badge.png" class="img-fluid rounded-start" alt="HTML & CSS Badge">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">HTML & CSS Specialist Badge</h4>
+                            <a href="https://www.credential.net/80cd947c-70c4-4f53-bf49-e8dbc0283f6b#gs.de549c" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card award-card mb-3 hidden" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/thumbnails/js-badge.png" class="img-fluid rounded-start" alt="JavaScript Badge">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">JavaScript Specialist Badge</h4>
+                            <a href="https://www.credential.net/365c9c0a-0ec7-4434-8b97-f5622c7484b9#gs.de4tg8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card award-card mb-3 hidden" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/thumbnails/intercultural-badge.png" class="img-fluid rounded-start" alt="Intercultural Skills Badge">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">Intercultural Skills Badge</h4>
+                            <a href="https://www.credential.net/2697242e-ae3e-4134-9dbb-a527fdc1a2c7#gs.de4unm" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card award-card mb-3 hidden" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/thumbnails/publicis-sapient-award.png" class="img-fluid rounded-start" alt="Publicis-Sapient Certificate">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h4 class="card-title">Publicis-Sapient Certificate</h4>
+                        <a href="https://www.credential.net/56c40f56-48e2-49de-8021-41be630f7cee" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="about-target"></div>
+        <div class="viewport">
+            <section id="about-section" class="row">
+                <h1 class="display-3 hidden">About Me</h1>
+                <div class="col-lg-6 col-sm-12 hidden">
+                    <img src="img/about-me.png" alt="about-me photo">
+                </div>
+                <div class="col-lg-6 col-sm-12 hidden">
+                    <p>Hi there! My name is Sevilla Smith,
+                    and I’m currently studying Computer Science at the University
+                    of Arizona. Before my technical journey, I had a deep-rooted
+                    passion for art, design, and writing, which has always driven my
+                    value of creativity. After taking a summer course on Python,
+                    I discovered another type of creativity through code and problem-solving,
+                    and I’ve been hooked ever since! With a background in art and a rising
+                    skill set in coding, I’m driven to participate in projects that allow
+                    me to blend these two creative mediums together. Whether it's developing
+                    visually appealing websites, innovative software, user-friendly interfaces,
+                    or even video games, I’m excited to discover opportunities that celebrate
+                    being artistically inspired and technically advanced!</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact-target"></div>
+        <section id="contact-section" class="row hidden">
+        <h1 class="display-3">Contact Me</h1>
+            <div class="col-md-4 col-sm-12">
+                <a href="https://www.linkedin.com/in/sevillasmith/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i> 
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="mailto:ssmith23@arizona.edu" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="https://github.com/ssevilla23" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <section id="footer-section">
+        <div class="copyright">
+            <p>&copy; 2024 Sevilla Smith</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"\
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"\
+    crossorigin="anonymous"></script>
+    <!-- My JavaScript -->
+    <script src="script.js"></script>
 </body>
-  
 </html>
